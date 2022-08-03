@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+</head>
+<body>
+    <svg height="1000" width="1160" style="background-color: rgb(255, 228, 145);">
+    <text x="200" y="50" fill="black" style="font-size: 50; font-weight: bold; font-family:Arial, Helvetica, sans-serif; text-decoration:underline ">GEOMETRIC SHAPES</text>
+    
+    <!-- Circle -->
+    <circle cx="150" cy="200" r="100" stroke="#c29a00" stroke-width="3" fill="#ffef00" />
+    <text x="110" y="340" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Circle</text>
+    
+    <!-- Rectangle -->
+    <rect x="300" y="110" width="270" height="180" stroke="#c29a00" stroke-width="3" fill="red" />
+    <text x="400" y="340" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Rectangle</text>
+    
+    <!-- Triangle -->
+    <polygon points="700,110 600,290, 800,290" fill="#e3eee6" stroke="#c29a00"/>
+    <text x="660" y="340" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Triangle</text>
+    
+    <!-- Ellipse -->
+    <ellipse cx="980" cy="200" rx="150" ry="90"  stroke="#c29a00" stroke-width="3" fill="red" />
+    <text x="940" y="340" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Ellipse</text>
+    
+    <!-- Square -->
+    <rect x="60" y="400" width="180" height="180" stroke="#c29a00" stroke-width="3" fill="#00a2f6" />
+    <text x="80" y="620" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Square</text>
+
+    <!-- Right angled triangle -->
+    <polygon points="480,400 480,580, 690,580" fill="#5cadcc" stroke="#c29a00" stroke-width="3"/>
+    <text x="490" y="620" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Right-Triangle</text>
+
+    <!-- Parallelogram -->
+    <polygon points="850,580 900,400, 1100,400 1050,580" fill="#596479" stroke="#c29a00" stroke-width="3"/>
+    <text x="850" y="620" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Parallelogram</text>
+    
+    <!-- Cylinder -->
+    <path d = "M 60 700 C 70 660 230 660 240 700 C 230 740 70 740 60 700 V 800 C 70 840 230 840 240 800 V 700 C 230 740 70 740 60 700 Z" stroke="#c29a00" stroke-width="3" fill="#ebbbb6"/> 
+    <text x="100" y="870" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Cylinder</text>
+    
+    <!-- Rectsngular prism -->
+    <rect x="420" y="720" width="270" height="90" stroke="#c29a00" stroke-width="3" fill="#8dc24c" />
+    <polygon points="420,720 460,680, 730,680 690,720" fill="#3a5c12" stroke="#c29a00" stroke-width="3"/>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color: #203b00;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#8bf806;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    <polygon points="690,720 730,680 730,770 690,810" fill="url(#grad1)" stroke="#c29a00" stroke-width="3"/>
+    <text x="450" y="870" fill="black" style="font-size: 30; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Rectangular Prism</text>
+    
+    <!-- Star -->
+    <polygon points = "850,720 910,720 930,660 950,720 1010,720 960,760 980,820 927,780 870,820 890,760" stroke="#c29a00" stroke-width="3" fill = "#333536"/>
+</svg>
+</body>
+</html>
