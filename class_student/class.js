@@ -143,6 +143,7 @@ function loadStudentDataToInputs(id) {
   document.getElementById(
     "buttontoadd"
   ).innerHTML = `<button onclick=editStudentData(${id})>Commit Changes</button></div>`;
+  document.getElementById("title").value = "Edit Student Details";
 }
 
 function editStudentData(id) {
@@ -160,6 +161,8 @@ function editStudentData(id) {
   document.getElementById(
     "buttontoadd"
   ).innerHTML = `<button onclick=addToStudentList()>Add</button></div>`;
+  clearfields();
+  document.getElementById("title").innerHTML = "Add Student";
   clearfields();
 }
 
