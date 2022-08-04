@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src = "class.js"></script>
+    <link rel="stylesheet" href="class.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div id="input">
+    <label for="name"> Name: </label>
+    <input type="text" name="name" id = "name">
+    <label for="std"> Class: </label>
+    <input type="text" name="std" id = "std">
+    <label for="age"> Age: </label>
+    <input type="number" name="age" id="age">
+    <label for="gender"> Gender: </label>
+    <input type="text" name="gender" id="gender">
+    <label for="place"> Location: </label>
+    <input type="text" name="place" id="place"><br>
+    <div id="buttontoadd">
+    <button onclick=addToStudentList()>Add</button></div>
+    </div>
+    <div id = "display">
+                    
+    </div>
 </body>
 </html>
+
