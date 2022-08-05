@@ -20,8 +20,14 @@ body {
 }
 #input{
     padding: 10px;
+    position: fixed;
+    width: 300px;
+    background: transparent;
 }
-
+#display{
+    margin-top: 10px;
+    margin-left: 300px;
+}
 #title{
     color: rgb(0, 62, 0);
     font-size: 25px;
