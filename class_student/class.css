@@ -21,12 +21,11 @@ body {
 #input{
     padding: 10px;
     position: fixed;
-    width: 300px;
-    background: transparent;
+    width: 400px;
 }
 #display{
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 #title{
     color: rgb(0, 62, 0);

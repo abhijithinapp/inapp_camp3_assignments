@@ -132,6 +132,11 @@ function displaystudentData() {
 function deletestudentData(id) {
   delete students[id];
   displaystudentData();
+  document.getElementById(
+    "buttontoadd"
+  ).innerHTML = `<button onclick=addToStudentList()>Add</button></div>`;
+  document.getElementById("title").innerHTML = "<span>Add Student</span>";
+  clearfields();
 }
 
 function loadStudentDataToInputs(id) {
@@ -143,7 +148,7 @@ function loadStudentDataToInputs(id) {
   document.getElementById(
     "buttontoadd"
   ).innerHTML = `<button onclick=editStudentData(${id})>Commit Changes</button></div>`;
-  document.getElementById("title").value = "Edit Student Details";
+  document.getElementById("title").innerHTML = "<span>Edit Student Details</span>";
 }
 
 function editStudentData(id) {
@@ -161,8 +166,7 @@ function editStudentData(id) {
   document.getElementById(
     "buttontoadd"
   ).innerHTML = `<button onclick=addToStudentList()>Add</button></div>`;
-  clearfields();
-  document.getElementById("title").innerHTML = "Add Student";
+  document.getElementById("title").innerHTML = "<span>Add Student</span>";
   clearfields();
 }
 
