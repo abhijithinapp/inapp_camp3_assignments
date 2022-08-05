@@ -1,0 +1,30 @@
+.longkeys{
+    width: 30%;
+}
+
+.keys{
+    cursor: pointer;
+}
+.specialkeys{
+    cursor: pointer;
+}
+
+#table{
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 20px;
+    width:30%;
+    background-color: aquamarine;
+    
+}
+
+td{
+width: 10%;
+border-radius: 7px;
+align-content: center;
+padding: 10px;
+background-color: blue;
+color: white;
+height: 20%;
+font-size: 20px;
+}
