@@ -12,9 +12,9 @@ function validate(){
   inputvalue = input.querySelector('input').value
   console.log(inputvalue)
   if( findIfNotEmpty(inputvalue))
-  input.querySelector('p').style.visibility = "hidden"
+  input.querySelector('p').style.display = "none"
   else
-  input.querySelector('p').style.visibility = "visible"
+  input.querySelector('p').style.display = "block"
 });
 }
 submit.addEventListener('click',validate)
