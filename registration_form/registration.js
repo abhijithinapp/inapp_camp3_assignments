@@ -10,7 +10,6 @@ function findIfNotEmpty(input) {
 function validate(){
   inputs.forEach(input => { 
   inputvalue = input.querySelector('input').value
-  console.log(inputvalue)
   if( findIfNotEmpty(inputvalue))
   input.querySelector('p').style.display = "none"
   else
