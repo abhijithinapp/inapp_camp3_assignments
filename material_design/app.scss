@@ -1,0 +1,36 @@
+// Button
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/icon-button";
+@use "@material/icon-button/styles";
+
+//AppBar
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+//lists
+@use "@material/image-list";
+
+//Data tables
+@use "@material/data-table/data-table";
+
+//lists
+@use "@material/list";
+
+
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+
+.my-masonry-image-list {
+    @include image-list.masonry-columns(3);
+  }
+
+
+.foo-button {
+@include button.container-fill-color(darksalmon);
+}
+
+
+
+*{
+    margin:0;
+}
