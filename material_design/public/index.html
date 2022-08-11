@@ -94,23 +94,15 @@
       </ul>
   
 
-      <!-- Lists -->
-      <ul class="mdc-list">
-        <li class="mdc-list-item" tabindex="0">
-          <span class="mdc-list-item__ripple"></span>
-          <span class="mdc-list-item__text">Single-line item</span>
-        </li>
-        <li class="mdc-list-item">
-          <span class="mdc-list-item__ripple"></span>
-          <span class="mdc-list-item__text">Single-line item</span>
-        </li>
-        <li class="mdc-list-item">
-          <span class="mdc-list-item__ripple"></span>
-          <span class="mdc-list-item__text">Single-line item</span>
-        </li>
-      </ul>
 
-      
+      <!-- FLoating action button -->
+      <div class="mdc-touch-target-wrapper">
+        <button class="mdc-fab mdc-fab--mini mdc-fab--touch">
+          <div class="mdc-fab__ripple"></div>
+          <span class="material-icons mdc-fab__icon">add</span>
+          <div class="mdc-fab__touch"></div>
+        </button>
+      </div>
     <!-- Button -->
     <button class="foo-button mdc-button">
         <div class="mdc-button__ripple"></div>
@@ -120,12 +112,101 @@
   </main>
 
 
+  <!-- Card -->
+  <div class="mdc-card my-card ">
+    <div class="mdc-card__primary-action" tabindex="0">
+      <!-- content within actionable area -->
+      <div class="mdc-card__ripple"></div>
+    </div>
+    HI this is card
+  </div>
 
-<!--button-->
+  <!-- Checkboxes -->
+  <div class="mdc-touch-target-wrapper">
+    <div class="mdc-checkbox mdc-checkbox--touch">
+      <input type="checkbox"
+             class="mdc-checkbox__native-control"
+             id="checkbox-1"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark"
+             viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+      <div class="mdc-checkbox__ripple"></div>
+    </div>
+  </div>
 
 
+  <!-- Chips -->
+  <span class="mdc-evolution-chip-set" role="grid">
+    <span class="mdc-evolution-chip-set__chips" role="presentation">
+      <span class="mdc-evolution-chip" role="row" id="c0">
+        <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="gridcell">
+          <button class="mdc-evolution-chip__action mdc-evolution-chip__action--primary" type="button" tabindex="0">
+            <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
+            <span class="mdc-evolution-chip__text-label">Chip one</span>
+          </button>
+        </span>
+      </span>
+      <span class="mdc-evolution-chip" role="row" id="c1">
+        <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="gridcell">
+          <button class="mdc-evolution-chip__action mdc-evolution-chip__action--primary" type="button" tabindex="-1">
+            <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
+            <span class="mdc-evolution-chip__text-label">Chip two</span>
+          </button>
+        </span>
+      </span>
+    </span>
+  </span>
+  
+  <!-- Menu -->
+  <div class="mdc-menu mdc-menu-surface">
+    <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+      <li class="mdc-list-item" role="menuitem">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">A Menu Item</span>
+      </li>
+      <li class="mdc-list-item" role="menuitem">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">Another Menu Item</span>
+      </li>
+    </ul>
+  </div>
 
-    <script src="bundle.js" async></script>
+  <!-- tabs -->
+  <div class="mdc-tab-bar" role="tablist">
+    <div class="mdc-tab-scroller">
+      <div class="mdc-tab-scroller__scroll-area">
+        <div class="mdc-tab-scroller__scroll-content">
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__icon material-icons" aria-hidden="true">dislike</span>
+              <span class="mdc-tab__text-label">Dislikes</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+          <button class="mdc-tab mdc-tab" role="tab"  tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+              <span class="mdc-tab__text-label">Favorites</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js" async></script>
 </body>
 
 </html>

@@ -13,8 +13,36 @@
 //Data tables
 @use "@material/data-table/data-table";
 
-//lists
-@use "@material/list";
+
+//floating action button
+@use "@material/fab";
+
+//card
+@use "@material/card";
+
+//checkboxes
+@use "@material/checkbox";
+@use "@material/form-field";
+
+@use "@material/chips/styles" as a-style;
+
+// Menu
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
+//tabs
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
+@include card.core-styles;
+
+@include fab.core-styles;
 
 
 @include data-table.core-styles;
@@ -29,6 +57,11 @@
 @include button.container-fill-color(darksalmon);
 }
 
+.my-card {
+  height: 50px;
+  width: 350px;
+  padding: 16px;
+}
 
 
 *{
