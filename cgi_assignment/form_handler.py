@@ -34,7 +34,7 @@ except ImportError:
 
 #to get the file from the nested FieldStorage instance
 fileitem = form['bioimage']
-
+imageFileName = None
 #checking if a valide file was uploaded
 if fileitem.filename:
     #remove path and keep only the filename 
@@ -48,10 +48,16 @@ else:
 print(f"""
 <html>
     <head>
-        <title>Test Title</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="myheadstyle">
+    <div class="center-align">
         <h2>Feedback form</h2>
         """)
     
@@ -67,8 +73,9 @@ print(f"""
     <p>Location: {location}</p>
     <p>Comments: {comments}</p>
 </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
-</html>
+  </html>
         """)
   
 
