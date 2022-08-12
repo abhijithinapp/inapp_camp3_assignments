@@ -56,7 +56,7 @@ print(f"""
         """)
     
 if imageFileName:
-    print("<br><img width=\"250px\" src=\"files/%s\">" %(imageFileName))
+    print("<br><img width=\"100px\" height=\"100px\" src=\"files/%s\">" %(imageFileName))
 
 print(f"""
     <p>Name: {name}</p>
