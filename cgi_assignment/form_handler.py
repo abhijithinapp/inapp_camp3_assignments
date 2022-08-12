@@ -42,6 +42,7 @@ if fileitem.filename:
     open('files/'+imageFileName,'wb').write(fileitem.file.read())
     msg = "The file was uploaded to files/"+imageFileName
 else:
+    imageFileName = "placeholder.png"
     msg = "No file was uploaded"
 
 
