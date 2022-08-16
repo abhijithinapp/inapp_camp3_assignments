@@ -21,3 +21,7 @@
 .card{
     margin: 5%;
 }
+
+.card-content{
+    background-color: rgba(134, 134, 131, 0.219);
+}
