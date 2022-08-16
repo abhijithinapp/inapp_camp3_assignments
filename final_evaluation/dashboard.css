@@ -1,0 +1,23 @@
+*{margin: 0;}
+
+.user-view{
+    background: url(images/manoramamax.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    
+}
+.cardImage{
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+.content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.card{
+    margin: 5%;
+}
